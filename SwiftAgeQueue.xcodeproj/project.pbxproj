@@ -10,6 +10,10 @@
 		5BF2D7A6235A32B1002F6104 /* SwiftAgeQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF2D79C235A32B1002F6104 /* SwiftAgeQueue.framework */; };
 		5BF2D7AB235A32B1002F6104 /* SwiftAgeQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2D7AA235A32B1002F6104 /* SwiftAgeQueueTests.swift */; };
 		5BF2D7AD235A32B1002F6104 /* SwiftAgeQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF2D79F235A32B1002F6104 /* SwiftAgeQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BF2D7B7235A32C2002F6104 /* SwiftList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2D7B6235A32C2002F6104 /* SwiftList.swift */; };
+		5BF2D7B9235A35E9002F6104 /* SwiftAgeQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2D7B8235A35E9002F6104 /* SwiftAgeQueue.swift */; };
+		5BF2D7BB235A3683002F6104 /* TimeSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2D7BA235A3683002F6104 /* TimeSlice.swift */; };
+		5BF2D7BD235A38FA002F6104 /* DeathHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF2D7BC235A38FA002F6104 /* DeathHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		5BF2D7A5235A32B1002F6104 /* SwiftAgeQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAgeQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF2D7AA235A32B1002F6104 /* SwiftAgeQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAgeQueueTests.swift; sourceTree = "<group>"; };
 		5BF2D7AC235A32B1002F6104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF2D7B6235A32C2002F6104 /* SwiftList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftList.swift; sourceTree = "<group>"; };
+		5BF2D7B8235A35E9002F6104 /* SwiftAgeQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAgeQueue.swift; sourceTree = "<group>"; };
+		5BF2D7BA235A3683002F6104 /* TimeSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlice.swift; sourceTree = "<group>"; };
+		5BF2D7BC235A38FA002F6104 /* DeathHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,10 @@
 			children = (
 				5BF2D79F235A32B1002F6104 /* SwiftAgeQueue.h */,
 				5BF2D7A0235A32B1002F6104 /* Info.plist */,
+				5BF2D7B6235A32C2002F6104 /* SwiftList.swift */,
+				5BF2D7B8235A35E9002F6104 /* SwiftAgeQueue.swift */,
+				5BF2D7BA235A3683002F6104 /* TimeSlice.swift */,
+				5BF2D7BC235A38FA002F6104 /* DeathHandler.swift */,
 			);
 			path = SwiftAgeQueue;
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					5BF2D79B235A32B1002F6104 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					5BF2D7A4235A32B1002F6104 = {
 						CreatedOnToolsVersion = 11.1;
@@ -195,6 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF2D7B7235A32C2002F6104 /* SwiftList.swift in Sources */,
+				5BF2D7BD235A38FA002F6104 /* DeathHandler.swift in Sources */,
+				5BF2D7B9235A35E9002F6104 /* SwiftAgeQueue.swift in Sources */,
+				5BF2D7BB235A3683002F6104 /* TimeSlice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +357,7 @@
 		5BF2D7B1235A32B1002F6104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.SwiftAgeQueue;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +382,7 @@
 		5BF2D7B2235A32B1002F6104 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +406,7 @@
 		5BF2D7B4235A32B1002F6104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftAgeQueueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +424,7 @@
 		5BF2D7B5235A32B1002F6104 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftAgeQueueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
